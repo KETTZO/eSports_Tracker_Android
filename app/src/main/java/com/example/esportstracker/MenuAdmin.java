@@ -137,7 +137,9 @@ public class MenuAdmin extends AppCompatActivity {
                 (View, year, month, dayOfMonth) -> {
                     // La fecha seleccionada se maneja aquí
                     // Puedes mostrarla en un TextView o realizar acciones adicionales
-                    String selectedDate = year + "-" + (month + 1) + "-" + dayOfMonth;
+                    String formattedMonth = (month + 1) < 10 ? "0" + (month + 1) : String.valueOf(month + 1);
+                    String formattedDay = dayOfMonth < 10 ? "0" + dayOfMonth : String.valueOf(dayOfMonth);
+                    String selectedDate = year + "-" + formattedMonth + "-" + formattedDay;
                     fecha = selectedDate;
                     datePickerButton.setText(selectedDate);
                 },
