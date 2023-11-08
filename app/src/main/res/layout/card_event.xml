@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:text="mensaje"/-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#e0e0e0"
+        android:id="@+id/card"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/equipo"
+            android:text="KGU VS C9"/>
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valorant"
+            android:id="@+id/juego"/>
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|"/>
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center|bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="29-03-94 7:00 PM"
+            android:id="@+id/horario"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

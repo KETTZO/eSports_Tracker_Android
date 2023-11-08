@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:text="mensaje"/-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#e0e0e0"
+        android:id="@+id/card"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/equipo"
+            android:text="KGU VS C9"
+            android:src="@drawable/baseline_notifications_24"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/notificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="20dp"
+            android:text="Acaba de comenzar la partida de T1 vs Cloud9!!"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificacion"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="20dp"
+            android:text="hace 2h"
+            android:textColor="#7C7C7C" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

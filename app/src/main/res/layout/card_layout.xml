@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:text="mensaje"/-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#e0e0e0"
+        android:id="@+id/card"
+        >
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/hk"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/juego"
+            android:layout_toRightOf="@+id/image"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/juego"
+            android:layout_toRightOf="@+id/image"
+            android:text=""
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fecha"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/desc"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hora"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/fecha"
+            android:layout_below="@+id/desc"
+            android:text=""
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
