@@ -19,7 +19,7 @@
         app:title="eSports Tracker" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/nameUpdate"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="25dp"
@@ -29,10 +29,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/userUpdate" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/pass2Update"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="25dp"
@@ -41,10 +41,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/passUpdate" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/userUpdate"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="25dp"
@@ -53,10 +53,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageUpdate" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/passUpdate"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="25dp"
@@ -65,10 +65,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/nameUpdate" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ImageUpdate"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="18dp"
@@ -79,23 +79,23 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/imageUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Cambiar imagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/ImageUpdate" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Confirmar cambios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/pass2Update" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

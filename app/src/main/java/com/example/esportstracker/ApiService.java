@@ -30,6 +30,9 @@ public interface ApiService {
     @POST("api/Login")
     Call<Void> loginUser(@Body User user);
 
+    @GET("api/getUser")
+    Call<JsonElement> getUser(@Query("searchTerm") String searchTerm);
+
     @POST("api/LoginAdmin")
     Call<Void> loginAdmin(@Body User user);
 
@@ -47,4 +50,7 @@ public interface ApiService {
 
     @GET("api/EventTracking")
     Call<JsonElement> GetEventTracking(@Query("idUser") String idUser);
+
+    @POST("api/updateUser")
+    Call<Void> updateUser(@Body User user);
 }
