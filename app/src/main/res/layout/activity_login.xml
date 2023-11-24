@@ -10,7 +10,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#f98122"
+        android:background="#914816"
         android:orientation="vertical"
         android:padding="130dp"
 
@@ -27,6 +27,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
@@ -87,7 +88,7 @@
         android:id="@+id/AdminButton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F88022"
+        android:backgroundTint="#914816"
         android:text="Admin"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="0dp"

@@ -215,7 +215,19 @@ public class Login extends AppCompatActivity {
         }
 
     }
+    private void cargarPreferenciasOffLine(){
 
+        SharedPreferences preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+        String usuario = preferences.getString("user","");
+        String contra = preferences.getString("pass","");
+
+        if (usuario != "" && contra != ""){
+            Intent intent = new Intent(Login.this, MainActivity.class); // Reemplaza 'ActivityOriginal' y 'NuevaActividad' con los nombres correctos de tus actividades
+            // Iniciar la nueva actividad
+            startActivity(intent);
+        }
+
+    }
 
 
 }

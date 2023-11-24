@@ -49,14 +49,14 @@ public class Home extends Fragment implements adaptador.OnItemClickListener {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        getEventTracking();
+
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         // on below line we are getting network info to get wifi network info.
         NetworkInfo wifiConnection = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
         // on below line displaying toast message when wi-fi is connected when wi-fi is disconnected
         if (wifiConnection.isConnected()) {
-
+            getEventTracking();
             queveEventSubmit();
 
             ApiService apiService = RetrofitClient.getApiService();
